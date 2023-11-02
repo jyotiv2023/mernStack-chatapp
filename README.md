@@ -78,9 +78,6 @@ A real-time chat application built with the MERN (MongoDB, Express, React, Node)
 
 - [Jyoti Verma](https://github.com/jyotiv2023)
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
 ```
 
