@@ -5,8 +5,8 @@
 
 ## Features 🌟
 
-- 🔐 Sign up and log in securely with JWT-based authentication.
-- 💬 Real-time chat functionality powered by Socket.io.
+ 🔐 Sign up and log in securely with JWT-based authentication.
+ 💬 Real-time chat functionality powered by Socket.io.
 - 🏠 Create chat rooms and start conversations with other users.
 - 🌈 Beautiful and responsive UI design with Chakra UI.
 - 🚀 Easy to use and navigate.
