@@ -7,6 +7,7 @@ import { AddIcon } from "@chakra-ui/icons";
 import ChatLoading from "./ChatLoading";
 import { getSender } from "../config/ChatLogics";
 import GroupChatModal from "./common/GroupChatModal";
+
 const MyChat = () => {
   const [loggedUser, setLoggedUser] = useState();
 
@@ -48,6 +49,7 @@ const MyChat = () => {
   };
   useEffect(() => {
     fetchChats();
+    // eslint-disable-next-line
   }, [fetchUpdatedChats]);
 
   return (

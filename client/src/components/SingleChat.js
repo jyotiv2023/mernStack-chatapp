@@ -92,6 +92,7 @@ const SingleChat = () => {
   useEffect(() => {
     fetchMessages();
     selectedChatCompare = selectedChat;
+    // eslint-disable-next-line
   }, [selectedChat]);
 
   const sendMessage = async (e) => {
