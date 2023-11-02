@@ -2,7 +2,7 @@
 A MERN stack chat application with real time communication
 
 
-```markdown
+
 # 🚀 MERN Stack Chat App
 
 A real-time chat application built with the MERN (MongoDB, Express, React, Node) stack, Socket.io for real-time communication, and JWT for user authentication. The user interface is designed using Chakra UI for a sleek and responsive design.
