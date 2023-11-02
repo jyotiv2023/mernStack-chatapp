@@ -1,21 +1,17 @@
-# CHAT TIME
-A MERN stack chat application with real time communication
 
+# 🚀  CHAT TIME
 
+📢 A MERN stack chat application with real-time communication.
 
-# 🚀 MERN Stack Chat App
+## Features 🌟
 
-A real-time chat application built with the MERN (MongoDB, Express, React, Node) stack, Socket.io for real-time communication, and JWT for user authentication. The user interface is designed using Chakra UI for a sleek and responsive design.
+🔐 Sign up and log in securely with JWT-based authentication.
+💬 Real-time chat functionality powered by Socket.io.
+🏠 Create chat rooms and start conversations with other users.
+🌈 Beautiful and responsive UI design with Chakra UI.
+🚀 Easy to use and navigate.
 
-## Features
-
-- Sign up and log in securely with JWT-based authentication.
-- Real-time chat functionality powered by Socket.io.
-- Create chat rooms and start conversations with other users.
-- Beautiful and responsive UI design with Chakra UI.
-- Easy to use and navigate.
-
-## Technologies Used
+## Technologies Used 💻
 
 - **MongoDB**: A NoSQL database for storing user data and chat messages.
 - **Express**: A backend framework for building the server.
@@ -26,7 +22,7 @@ A real-time chat application built with the MERN (MongoDB, Express, React, Node)
 - **Chakra UI**: A component library for creating beautiful and responsive UI.
 - **Visual Studio Code**: The code editor used for development.
 
-## Installation and Usage
+## Installation and Usage 🛠️
 
 1. Clone the repository:
 
@@ -54,8 +50,8 @@ A real-time chat application built with the MERN (MongoDB, Express, React, Node)
    Create a `.env` file in the "server" directory and set the following variables:
 
    ```
-   MONGO_URI=*****
-   JWT_SECRET=jwt_secret
+   MONGO_URI=your_mongodb_uri
+   JWT_SECRET=your_jwt_secret
    ```
 
 5. Start the server and client:
@@ -74,10 +70,8 @@ A real-time chat application built with the MERN (MongoDB, Express, React, Node)
 
 6. Open your browser and access the app at [http://localhost:3000](http://localhost:3000).
 
-## Author
+## Author 👩‍💻
 
 - [Jyoti Verma](https://github.com/jyotiv2023)
 
-
 ```
-
