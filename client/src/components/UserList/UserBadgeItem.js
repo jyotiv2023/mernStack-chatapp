@@ -1,4 +1,4 @@
-import { Box, CloseButton } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React from "react";
 import { CloseIcon } from "@chakra-ui/icons";
 const UserBadgeItem = ({ user, handleFunction }) => {

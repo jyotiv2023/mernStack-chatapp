@@ -1,7 +1,6 @@
 import {
   Tooltip,
   Box,
-  Badge,
   Button,
   Text,
   Menu,
@@ -18,7 +17,6 @@ import {
   Input,
   useToast,
   Spinner,
-  IconButton,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/hooks";
 import React, { useEffect, useState } from "react";
@@ -135,6 +133,7 @@ const SideDrawer = () => {
     } catch (error) {
       console.error("Error setting notifications in local storage:", error);
     }
+    // eslint-disable-next-line
   }, [notification]);
 
   // Function to remove a notification
