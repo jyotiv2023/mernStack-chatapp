@@ -1,0 +1,5 @@
+"bcrypt" is a library for securely hashing passwords in our web applications.
+To hash a password we use "bcrypt.hash" function , which takes password as the input and generates a hashed version of the password
+We can also specify a "salt" factor which adds randomness to the hash to make it more secure. Higher the salt factor more secure the hash is , but will take more time to compute though.
+When the user attempts to log in, we can compare the entered password with the stored hashed password to verify it.
+To compare we use 'bcrypt.compare'
