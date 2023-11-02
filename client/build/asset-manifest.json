@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89c41698.css",
+    "main.js": "/static/js/main.6d495afe.js",
+    "static/media/chat-app-bckg.png": "/static/media/chat-app-bckg.14e26fc17e4f304a4394.png",
+    "index.html": "/index.html",
+    "main.89c41698.css.map": "/static/css/main.89c41698.css.map",
+    "main.6d495afe.js.map": "/static/js/main.6d495afe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89c41698.css",
+    "static/js/main.6d495afe.js"
+  ]
+}

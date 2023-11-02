@@ -21,6 +21,10 @@ const MyChat = () => {
 
   const toast = useToast();
 
+  useEffect(() => {
+    setLoggedUser(JSON.parse(localStorage.getItem("userInfo")));
+  }, []);
+
   const fetchChats = async () => {
     try {
       const config = {
@@ -29,7 +33,7 @@ const MyChat = () => {
         },
       };
       const { data } = await axios.get("api/chat", config);
-      console.log("data", data);
+      console.log("chats", chats);
       setChats(data);
     } catch (error) {
       toast({
@@ -43,7 +47,6 @@ const MyChat = () => {
     }
   };
   useEffect(() => {
-    setLoggedUser(JSON.parse(localStorage.getItem("userInfo")));
     fetchChats();
   }, [fetchUpdatedChats]);
 
@@ -89,7 +92,7 @@ const MyChat = () => {
         borderRadius={"lg"}
         overflowY={"hidden"}
       >
-        {chats ? (
+        {chats && chats.length > 0 ? (
           <Stack overflowY={"scroll"}>
             {chats?.map((chat) => (
               <Box

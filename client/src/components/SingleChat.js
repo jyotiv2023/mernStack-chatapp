@@ -87,7 +87,7 @@ const SingleChat = () => {
     socket.on("connected", () => setSocketConnected(true));
     socket.on("typing", () => setIsTyping(true));
     socket.on("stop typing", () => setIsTyping(false));
-  }, []);
+  }, [user]);
 
   useEffect(() => {
     fetchMessages();
@@ -112,7 +112,7 @@ const SingleChat = () => {
           { content: newMessage, chatId: selectedChat._id },
           config
         );
-        console.log(data);
+
         socket.emit("New message", data);
         setMessage([...message, data]);
       } catch (error) {
@@ -127,7 +127,7 @@ const SingleChat = () => {
       }
     }
   };
-  console.log("notif", notification);
+
   useEffect(() => {
     socket.on("message received", (newMessageReceived) => {
       if (
