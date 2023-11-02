@@ -24,33 +24,30 @@ app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 
 //-------------deployment----------
-// const __dirname1 = path.resolve();
-const currentWorkingDirectory = path.resolve();
-console.log(currentWorkingDirectory);
+// // const __dirname1 = path.resolve();
+// const currentWorkingDirectory = path.resolve();
+// console.log(currentWorkingDirectory);
 
-if (process.env.NODE_ENV === "production") {
-  console.log(
-    "ssddd",
-    express.static(path.join(currentWorkingDirectory, "../client/build"))
-  );
-  app.use(
-    express.static(path.join(currentWorkingDirectory, "../client/build"))
-  );
+// if (process.env.NODE_ENV === "production") {
 
-  // const indexPath = path.resolve(
-  //   currentWorkingDirectory,
-  //   "../client/build/index.html"
-  // );
-  app.get("*", (req, res) =>
-    res.sendFile(
-      path.resolve(currentWorkingDirectory, "../client/build/index.html")
-    )
-  );
-} else {
-  app.get("/", (req, res) => {
-    res.send("API is running successfully");
-  });
-}
+//   app.use(
+//     express.static(path.join(currentWorkingDirectory, "../client/build"))
+//   );
+
+//   // const indexPath = path.resolve(
+//   //   currentWorkingDirectory,
+//   //   "../client/build/index.html"
+//   // );
+//   app.get("*", (req, res) =>
+//     res.sendFile(
+//       path.resolve(currentWorkingDirectory, "../client/build/index.html")
+//     )
+//   );
+// } else {
+//   app.get("/", (req, res) => {
+//     res.send("API is running successfully");
+//   });
+// }
 //-------------deployment----------
 app.use(notFound);
 app.use(errorHandler);
