@@ -15,9 +15,9 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/", (request, response) => {
-  response.send("Api is running");
-});
+// app.get("/", (request, response) => {
+//   response.send("Api is running");
+// });
 
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
